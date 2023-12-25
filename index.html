@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helia</title>
+    <meta name="description" content="comming soon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <link rel="shortcut icon" href="assets/images/favicon.svg" />
+    <style>
+        html {
+            font-size: 1px;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        section {
+            min-height: 100vh;
+            background: center / cover no-repeat url('./assets/images/bg-mobile.png');
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+        }
+
+        section .container {
+            text-align: center;
+            padding: 20rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section .container img {
+            margin-bottom: 58rem;
+            max-width: 100%;
+            width: 445rem;
+        }
+
+        section .container h1 {
+            color: #356066;
+            font-size: 36rem;
+            font-weight: 400;
+            font-family: Baskerville;
+            margin: 0;
+        }
+
+        section .container h1 span {
+            display: inline-block;
+        }
+
+        @media (min-width: 767px) {
+            html {
+                font-size: calc((1px + ((100vw - 1920px) / 1920) * 1));
+            }
+
+            section {
+                padding: 0 0 0 10%;
+                text-align: left;
+                background-image: url('./assets/images/bg.png');
+            }
+
+            section .container {
+                text-align: left;
+            }
+
+            section .container h1 {
+                font-size: 90.31rem;
+            }
+        }
+    </style>
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1347937595863063');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1347937595863063&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <img id="logo" src="assets/images/logo.svg" alt="Helia">
+            <h1 id="coming_soon">
+                <span>C</span><span>O</span><span>M</span><span>I</span><span>N</span><span>G</span>
+                <span>S</span><span>O</span><span>O</span><span>N</span>
+            </h1>
+        </div>
+    </section>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
